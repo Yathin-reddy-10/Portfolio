@@ -92,7 +92,7 @@ function AnimatedCode({}) {
 
 function AnimatedBGImage({ textureUrl }) {
   const group = useRef();
-  const texture = useLoader(TextureLoader, portfolioImage);
+  const texture = useLoader(TextureLoader, '/Portfolio/3d-portfolio.png');
   useFrame(({ clock, mouse }) => {
     const t = clock.getElapsedTime();
     // Subtle floating and parallax
