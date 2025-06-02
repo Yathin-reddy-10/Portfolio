@@ -153,7 +153,7 @@ const Landing = () => {
         <Canvas camera={{ position: [0, 0, 4.5], fov: 38 }} style={{ position: 'absolute', inset: 0, width: '100vw', height: '100vh', zIndex: 1, pointerEvents: 'none' }}>
           <ambientLight intensity={0.7} />
           <directionalLight position={[2, 4, 2]} intensity={1.2} />
-          <AnimatedBGImage textureUrl={"/3d-portfolio.png"} />
+          <AnimatedBGImage textureUrl={"3d-portfolio.png"} />
         </Canvas>
         <div className="landing-bg-blur" />
         <MatrixRain />

@@ -59,7 +59,7 @@ const Home = () => {
             animate={{ scale: 1, opacity: 1, y: [0, -20, 0] }}
             transition={{ delay: 0.2, duration: 3, type: 'spring', repeat: Infinity, repeatType: 'reverse' }}
           >
-            <img src="/IMG_2771.jpg" alt="Illuru Yathin Reddy" loading="eager" decoding="async" />
+            <img src="./IMG_2771.jpg" alt="Illuru Yathin Reddy" loading="eager" decoding="async" />
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

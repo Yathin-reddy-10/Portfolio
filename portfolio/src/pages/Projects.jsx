@@ -8,7 +8,7 @@ import '../styles/Projects.css';
 const projects = [
   {
     title: 'Ticket Management System',
-    image: '/Screenshot 2025-06-02 154716.png',
+    image: './Screenshot 2025-06-02 154716.png',
     description: 'Enterprise-grade solution for IT ticketing, built with a mix of Node.js and Java microservices, Docker, Prometheus, Jenkins, Linux scripting, NGINX for LAN deployment, and advanced monitoring (Prometheus, Grafana, Loki). Features robust CI/CD, alerting (Nodemailer, Teams Webhooks), and a modern frontend. This project demonstrates a full DevOps lifecycle and a wide toolkit of modern technologies.',
     features: [
       'Microservices architecture (Java, Node.js backend, React frontend)',
@@ -30,20 +30,20 @@ const projects = [
     demos: [
       { src: 'https://www.linkedin.com/posts/yathin-reddy-048120215_microservices-javadevelopment-springboot-activity-7335260209331769345-rQZT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg', summary: 'End-to-end workflow, code structure, and microservices (Node.js & Java) overview (see full backend walkthrough on LinkedIn)' },
       { src: 'https://www.linkedin.com/posts/yathin-reddy-048120215_reactjs-frontenddevelopment-publicissapient-activity-7335260317578403842-mKLb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg', summary: 'Frontend UI Demo: Ticket Management System (see full experience on LinkedIn)' },
-      { src: '/Screen Recording 2025-06-02 152619.mp4', summary: 'Monitoring, Alerts (Prometheus, Grafana, Loki, Nodemailer, Teams Webhooks)' }
+      { src: './Screen Recording 2025-06-02 152619.mp4', summary: 'Monitoring, Alerts (Prometheus, Grafana, Loki, Nodemailer, Teams Webhooks)' }
     ],
     screenshots: [
-      { src: '/shared image (1).jpg', caption: 'Deployed in Publicis Sapient LAN using NGINX, accessible on multiple devices.' },
-      { src: '/Screenshot 2025-06-02 153425.png', caption: 'Docker Hub: Microservice images (Java/Node.js) pushed for deployment.' },
-      { src: '/Jenkins.png', caption: 'CI/CD pipeline in Jenkins: Automated build, test, and deployment of all microservices.' },
-      { src: '/Screenshot 2025-06-02 220413.png', caption: 'Grafana Alert in Teams' },
-      { src: '/Screenshot 2025-06-02 220506.png', caption: 'Grafana Alert in Gmail' }
+      { src: './shared image (1).jpg', caption: 'Deployed in Publicis Sapient LAN using NGINX, accessible on multiple devices.' },
+      { src: './Screenshot 2025-06-02 153425.png', caption: 'Docker Hub: Microservice images (Java/Node.js) pushed for deployment.' },
+      { src: './Jenkins.png', caption: 'CI/CD pipeline in Jenkins: Automated build, test, and deployment of all microservices.' },
+      { src: './Screenshot 2025-06-02 220413.png', caption: 'Grafana Alert in Teams' },
+      { src: './Screenshot 2025-06-02 220506.png', caption: 'Grafana Alert in Gmail' }
     ],
     linkedin: 'https://www.linkedin.com/posts/yathin-reddy-048120215_devops-monitoring-prometheus-activity-7335260317750370304-pa_G?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg',
   },
   {
     title: 'Asset Management System and Finance Tracker',
-    image: '/Screenshot 2025-06-02 154746.png',
+    image: './Screenshot 2025-06-02 154746.png',
     description: 'Comprehensive asset management and finance tracking tool for educational institutions.',
     features: [
       'Manage physical and digital assets',
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: 'CRM for Educational Institution (Sri Chaitanya)',
-    image: '/download (3).jpg',
+    image: './download (3).jpg',
     description: 'Custom CRM platform to manage student inquiries, track admissions, and improve lead conversion by 25%.',
     features: [
       'Real-time chat and call features (Airtel APIs)',
@@ -78,7 +78,7 @@ const projects = [
   },
   {
     title: 'Ticket and Network Management System',
-    image: '/Network-Management.jpg',
+    image: './Network-Management.jpg',
     description: 'Dual-purpose platform for support ticketing and network monitoring in educational and enterprise environments.',
     features: [
       'Ticketing module for tracking/resolving issues',
@@ -92,12 +92,12 @@ const projects = [
     github: 'https://github.com/Yathin-reddy-10/network_backend',
     github2: 'https://github.com/Yathin-reddy-10/Network_Frontend',
     live: 'https://sctickets.in/',
-    screenshots: ['/Screenshot 2025-05-26 000537.png'],
-    demo: '/Networking.mp4'
+    screenshots: ['./Screenshot 2025-05-26 000537.png'],
+    demo: './Networking.mp4'
   },
   {
     title: 'Academic Reports System',
-    image: '/student-management-software-500x500.webp',
+    image: './student-management-software-500x500.webp',
     description: 'Robust system used by 900+ schools to manage, generate, and visualize student performance reports.',
     features: [
       'Real-time data entry and advanced filtering',
@@ -116,7 +116,7 @@ const projects = [
   },
   {
     title: 'Health and Wellness Blog Application',
-    image: '/istockphoto-1363588189-612x612.jpg',
+    image: './istockphoto-1363588189-612x612.jpg',
     description: 'Responsive blog platform for health and wellness content, built during internship at Compsoft Technologies.',
     features: [
       'User login, article browsing, categorization',
@@ -137,7 +137,7 @@ const projects = [
 const professionalProjects = [
   {
     title: 'Ticket Management System',
-    image: '/Screenshot 2025-06-02 154716.png',
+    image: './Screenshot 2025-06-02 154716.png',
     description: 'Enterprise-grade solution for IT ticketing, built with a mix of Node.js and Java microservices, Docker, Prometheus, Jenkins, Linux scripting, NGINX for LAN deployment, and advanced monitoring (Prometheus, Grafana, Loki). Features robust CI/CD, alerting (Nodemailer, Teams Webhooks), and a modern frontend. This project demonstrates a full DevOps lifecycle and a wide toolkit of modern technologies.',
     features: [
       'Microservices architecture (Java, Node.js backend, React frontend)',
@@ -159,20 +159,20 @@ const professionalProjects = [
     demos: [
       { src: 'https://www.linkedin.com/posts/yathin-reddy-048120215_microservices-javadevelopment-springboot-activity-7335260209331769345-rQZT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg', summary: 'End-to-end workflow, code structure, and microservices (Node.js & Java) overview (see full backend walkthrough on LinkedIn)' },
       { src: 'https://www.linkedin.com/posts/yathin-reddy-048120215_reactjs-frontenddevelopment-publicissapient-activity-7335260317578403842-mKLb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg', summary: 'Frontend UI Demo: Ticket Management System (see full experience on LinkedIn)' },
-      { src: '/Screen Recording 2025-06-02 152619.mp4', summary: 'Monitoring, Alerts (Prometheus, Grafana, Loki, Nodemailer, Teams Webhooks)' }
+      { src: './Screen Recording 2025-06-02 152619.mp4', summary: 'Monitoring, Alerts (Prometheus, Grafana, Loki, Nodemailer, Teams Webhooks)' }
     ],
     screenshots: [
-      { src: '/shared image (1).jpg', caption: 'Deployed in Publicis Sapient LAN using NGINX, accessible on multiple devices.' },
-      { src: '/Screenshot 2025-06-02 153425.png', caption: 'Docker Hub: Microservice images (Java/Node.js) pushed for deployment.' },
-      { src: '/Jenkins.png', caption: 'CI/CD pipeline in Jenkins: Automated build, test, and deployment of all microservices.' },
-      { src: '/Screenshot 2025-06-02 220413.png', caption: 'Grafana Alert in Teams' },
-      { src: '/Screenshot 2025-06-02 220506.png', caption: 'Grafana Alert in Gmail' }
+      { src: './shared image (1).jpg', caption: 'Deployed in Publicis Sapient LAN using NGINX, accessible on multiple devices.' },
+      { src: './Screenshot 2025-06-02 153425.png', caption: 'Docker Hub: Microservice images (Java/Node.js) pushed for deployment.' },
+      { src: './Jenkins.png', caption: 'CI/CD pipeline in Jenkins: Automated build, test, and deployment of all microservices.' },
+      { src: './Screenshot 2025-06-02 220413.png', caption: 'Grafana Alert in Teams' },
+      { src: './Screenshot 2025-06-02 220506.png', caption: 'Grafana Alert in Gmail' }
     ],
     linkedin: 'https://www.linkedin.com/posts/yathin-reddy-048120215_devops-monitoring-prometheus-activity-7335260317750370304-pa_G?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZM_jgBlHaW7I1YEj8X5mXnJBrlcEOycYg',
   },
   {
     title: 'Asset Management System and Finance Tracker',
-    image: '/Screenshot 2025-06-02 154746.png',
+    image: './Screenshot 2025-06-02 154746.png',
     description: 'Comprehensive asset management and finance tracking tool for educational institutions.',
     features: [
       'Manage physical and digital assets',
@@ -186,12 +186,12 @@ const professionalProjects = [
     details: `Developed a comprehensive asset management system integrated with a finance tracking tool tailored for educational institutions. The platform helps manage physical and digital assets, while also tracking financial activities such as income, expenses, and budget forecasting. Built using Django and MySQL on the backend and JavaScript for dynamic front-end interactions, the system ensures secure and efficient resource and budget monitoring.\n\nRole & Responsibilities: Developed and deployed a full-stack web platform using Django and MySQL to manage assets and track finances for educational institutions. The system included a financial module for monitoring income, expenses, and budget forecasts, with a user-friendly interface built using JavaScript. Created RESTful APIs for smooth communication between modules, ensured end-to-end functionality through thorough testing, and maintained proper documentation while publishing clean, production-ready code to GitHub.`,
     github: 'https://github.com/Yathin-reddy-10/Assest_management_backend',
     live: 'https://scapps.net/auth/login',
-    screenshots: ['/Screenshot 2025-05-25 235639.png'],
+    screenshots: ['./Screenshot 2025-05-25 235639.png'],
     demo: 'Demo not possible as the website contains sensitive organization data.'
   },
   {
     title: 'CRM for Educational Institution (Sri Chaitanya)',
-    image: '/download (3).jpg',
+    image: './download (3).jpg',
     description: 'Custom CRM platform to manage student inquiries, track admissions, and improve lead conversion by 25%.',
     features: [
       'Real-time chat and call features (Airtel APIs)',
@@ -211,7 +211,7 @@ const professionalProjects = [
   },
   {
     title: 'Ticket and Network Management System',
-    image: '/Network-Management.jpg',
+    image: './Network-Management.jpg',
     description: 'Dual-purpose platform for support ticketing and network monitoring in educational and enterprise environments.',
     features: [
       'Ticketing module for tracking/resolving issues',
@@ -225,12 +225,12 @@ const professionalProjects = [
     github: 'https://github.com/Yathin-reddy-10/network_backend',
     github2: 'https://github.com/Yathin-reddy-10/Network_Frontend',
     live: 'https://sctickets.in/',
-    screenshots: ['/Screenshot 2025-05-26 000537.png'],
-    demo: '/Networking.mp4'
+    screenshots: ['./Screenshot 2025-05-26 000537.png'],
+    demo: './Networking.mp4'
   },
   {
     title: 'Academic Reports System',
-    image: '/student-management-software-500x500.webp',
+    image: './student-management-software-500x500.webp',
     description: 'Robust system used by 900+ schools to manage, generate, and visualize student performance reports.',
     features: [
       'Real-time data entry and advanced filtering',
@@ -249,7 +249,7 @@ const professionalProjects = [
   },
   {
     title: 'Health and Wellness Blog Application',
-    image: '/istockphoto-1363588189-612x612.jpg',
+    image: './istockphoto-1363588189-612x612.jpg',
     description: 'Responsive blog platform for health and wellness content, built during internship at Compsoft Technologies.',
     features: [
       'User login, article browsing, categorization',
