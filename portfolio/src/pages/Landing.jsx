@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faNodeJs, faPython, faJs, faGithub, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faCloud, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Landing.css';
+import portfolioImage from '../assets/3d-portfolio.png';
 
 // Matrix rain effect as a full-page canvas overlay (subtle)
 function MatrixRain() {
@@ -91,7 +92,7 @@ function AnimatedCode({}) {
 
 function AnimatedBGImage({ textureUrl }) {
   const group = useRef();
-  const texture = useLoader(TextureLoader, textureUrl);
+  const texture = useLoader(TextureLoader, portfolioImage);
   useFrame(({ clock, mouse }) => {
     const t = clock.getElapsedTime();
     // Subtle floating and parallax
