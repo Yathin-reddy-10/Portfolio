@@ -90,9 +90,9 @@ function AnimatedCode({}) {
   );
 }
 
-function AnimatedBGImage({ textureUrl }) {
+function AnimatedBGImage() {
   const group = useRef();
-  const texture = useLoader(TextureLoader, '/Portfolio/3d-portfolio.png');
+  const texture = useLoader(TextureLoader, '3d-portfolio.png');
   useFrame(({ clock, mouse }) => {
     const t = clock.getElapsedTime();
     // Subtle floating and parallax
@@ -154,7 +154,7 @@ const Landing = () => {
         <Canvas camera={{ position: [0, 0, 4.5], fov: 38 }} style={{ position: 'absolute', inset: 0, width: '100vw', height: '100vh', zIndex: 1, pointerEvents: 'none' }}>
           <ambientLight intensity={0.7} />
           <directionalLight position={[2, 4, 2]} intensity={1.2} />
-          <AnimatedBGImage textureUrl={"3d-portfolio.png"} />
+          <AnimatedBGImage />
         </Canvas>
         <div className="landing-bg-blur" />
         <MatrixRain />
