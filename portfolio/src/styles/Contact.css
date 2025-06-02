@@ -1,0 +1,243 @@
+.contact {
+  padding: 8rem 0 5rem;
+  background-color: var(--background-color);
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  text-align: center;
+  color: var(--gray-600);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-row .card {
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 340px;
+  background: var(--background-glass);
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #7f5af022;
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: box-shadow 0.2s;
+}
+
+.contact-row .card:hover {
+  box-shadow: 0 4px 24px #7f5af044;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+.contact-form {
+  background: var(--background-glass);
+  border-radius: 1.3rem;
+  box-shadow: 0 4px 32px #7f5af033, 0 2px 12px #2cb67d22;
+  padding: 2.7rem 2.2rem 2.2rem 2.2rem;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.form-group input,
+.form-group textarea {
+  font-size: 1.13rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.7rem;
+}
+
+.form-group label {
+  display: none;
+}
+
+.form-send-btn {
+  width: 100%;
+  font-size: 1.18rem;
+  font-weight: 700;
+  border-radius: 0.9rem;
+  background: linear-gradient(90deg, #7f5af0, #2cb67d);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px #7f5af033;
+  padding: 1.1rem 0;
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.form-send-btn:hover {
+  background: linear-gradient(90deg, #2cb67d, #7f5af0);
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-item svg {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0.25rem;
+}
+
+.info-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray-800);
+}
+
+.info-item a,
+.info-item p {
+  color: var(--gray-600);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: var(--primary-color);
+}
+
+.contact-link {
+  display: inline-block;
+  color: #7f5af0;
+  font-weight: 700;
+  font-size: 1.08rem;
+  text-decoration: underline;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  transition: color 0.2s;
+  word-break: break-all;
+  pointer-events: auto !important;
+  z-index: 2;
+}
+
+.contact-link:hover {
+  color: #2cb67d;
+  text-decoration: underline wavy;
+}
+
+.contact-link.whatsapp {
+  color: #25D366;
+}
+
+.input-icon-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f5af0;
+  font-size: 1.2rem;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.input-icon-group input,
+.input-icon-group textarea {
+  padding-left: 2.7rem;
+}
+
+@media (max-width: 900px) {
+  .contact-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.2rem;
+    align-items: stretch;
+  }
+  .contact-form-wrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 0 3rem;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.2rem;
+    align-items: stretch;
+  }
+
+  .contact-info {
+    order: 2;
+  }
+
+  .contact-form {
+    order: 1;
+  }
+}
+
+.contact-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-glass);
+  color: #2cb67d;
+  font-weight: 700;
+  font-size: 1.18rem;
+  padding: 2rem 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px #7f5af055, 0 2px 12px #2cb67d33;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: popupFadeIn 0.3s cubic-bezier(.4,2,.3,1);
+}
+@keyframes popupFadeIn {
+  from { opacity: 0; transform: translate(-50%, -60%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+} 

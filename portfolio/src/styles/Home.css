@@ -1,0 +1,223 @@
+.home {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4rem;
+  position: relative;
+  background: none;
+}
+
+.animated-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 30%, #7f5af0 0%, transparent 60%),
+              radial-gradient(circle at 80% 70%, #2cb67d 0%, transparent 60%);
+  opacity: 0.13;
+  animation: bgMove 12s linear infinite alternate;
+}
+
+@keyframes bgMove {
+  0% { background-position: 20% 30%, 80% 70%; }
+  100% { background-position: 30% 40%, 70% 60%; }
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(127,90,240,0.13);
+  border: 4px solid var(--primary-color);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  image-rendering: auto;
+  box-shadow: 0 4px 32px #7f5af055, 0 2px 12px #2cb67d22;
+  filter: contrast(1.08) brightness(1.08) saturate(1.12);
+}
+
+.floating-tech-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 0 0 0.1rem 0;
+  z-index: 3;
+  position: relative;
+}
+
+.tech-icon {
+  font-size: 1.6rem;
+  color: #7f5af0;
+  background: linear-gradient(135deg, #232946 60%, #2cb67d 100%);
+  border-radius: 50%;
+  padding: 0.22rem;
+  box-shadow: 0 1.5px 4px rgba(127,90,240,0.10), 0 0.5px 2px #2cb67d11;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #7f5af0;
+  filter: drop-shadow(0 2px 8px #7f5af0cc);
+  perspective: 300px;
+}
+
+.tech-icon:hover {
+  background: linear-gradient(135deg, #7f5af0 60%, #2cb67d 100%);
+  color: #fff;
+  transform: scale(1.07) translateY(-2px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 2px 6px #2cb67d22, 0 1px 4px #7f5af022;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.home h2.typewriter {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+  min-height: 2.5rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.type-cursor {
+  display: inline-block;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 2px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.intro {
+  font-size: 1.25rem;
+  color: var(--gray-400);
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.cta-buttons .btn {
+  font-size: 1.1rem;
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px rgba(127,90,240,0.08);
+  transition: all 0.3s cubic-bezier(.4,2,.3,1);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.cta-buttons .btn-primary {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+}
+
+.cta-buttons .btn-primary:hover {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.cta-buttons .btn-secondary {
+  background: var(--gray-100);
+  color: var(--primary-color);
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.scroll-cue {
+  margin: 2.5rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.svg-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.svg-wave svg {
+  width: 100vw;
+  height: 120px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h2.typewriter {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .svg-wave svg {
+    height: 60px;
+  }
+  .floating-tech-icons {
+    gap: 0.7rem;
+    margin: 0 0 0.1rem 0;
+  }
+  .tech-icon {
+    font-size: 1.2rem;
+    padding: 0.13rem;
+  }
+} 
