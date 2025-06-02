@@ -88,7 +88,7 @@ const awards = [
   {
     name: 'ROOKIE OF THE BATCH (PUBLICIS SAPIENT TRAINING)',
     year: '2025',
-    images: ['/IMG_20250525_151410.jpg', '/IMG_5182.JPG'],
+    images: ['/Portfolio/IMG_20250525_151410.jpg', '/Portfolio/IMG_5182.JPG'],
     description: 'Recognized for proactively taking diverse tasks, embracing change, and creatively addressing challenges.'
   }
 ];
